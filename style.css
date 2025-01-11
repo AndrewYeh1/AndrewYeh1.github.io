@@ -1,6 +1,7 @@
 .content {
     min-width: 960px;
-    max-width: 1240px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 body {
@@ -12,10 +13,11 @@ body {
 
 header {
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    color: black;
     text-align: center;
     padding: 1em 0;
-    align-items: right;
+    display: flex;
+    justify-content: space-between;
     padding: 50px 100px;
 }
 
@@ -27,6 +29,14 @@ section {
     padding: 10px 100px;
 }
 
+img {
+    border-radius: 16px;
+}
+
+.project {
+    display: flex;
+}
+
 .button-regular-nav {
     background-color: #c6c8d0;
     border: none;
@@ -34,7 +44,7 @@ section {
     font-weight: bold;
     border-radius: 32px;
     padding: 10px 20px;
-    margin: 0px 5px;
+    margin: 20px 5px;
     float: right;
 }
 
@@ -46,6 +56,17 @@ section {
     color: #f1f1fc;
     border-radius: 32px;
     padding: 10px 20px;
-    margin: 0px 5px;
+    margin: 20px 5px;
     float: right;
+}
+
+.button-img-nav {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.linkedin-img {
+    width: 41px;
+    height: 41px;
+    margin: 20px 5px;
 }
