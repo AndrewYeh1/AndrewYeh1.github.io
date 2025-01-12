@@ -60,12 +60,12 @@ img {
     float: right;
 }
 
-.button-img-nav {
+.button-img {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
 
-.linkedin-img {
+.circular-img {
     width: 41px;
     height: 41px;
     margin: 20px 5px;
