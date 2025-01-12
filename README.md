@@ -1,5 +1,4 @@
 # AndrewYeh1.github.io
-A portfolio...\n
-Current version: V1\n
+A portfolio...<br/>
+Current version: V1<br/>
 Development: V2
-n
