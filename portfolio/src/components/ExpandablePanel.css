@@ -1,0 +1,34 @@
+/* ExpandablePanel.css */
+.expandable-panel {
+  width: 100%;
+  border-bottom: 1px solid #444; /* dark gray divider */
+}
+
+.expandable-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #111; /* dark background */
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0; /* square corners */
+  cursor: pointer;
+}
+
+.expandable-header:focus {
+  outline: none;
+}
+
+.expandable-content {
+  background: #222; /* slightly lighter than header */
+  color: white;
+  overflow: hidden;
+}
+
+.expandable-body {
+  padding: 1rem;
+}
