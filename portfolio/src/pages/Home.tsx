@@ -17,7 +17,7 @@ interface Panel {
 
 const panels: Panel[] = [
   { id: "top", href: "/hardware", title: "Hardware", text: "", bg: pcbImage },
-  { id: "center", href: "/about", title: "Andrew Yeh", text: "More About Me", bg: fpvImage },
+  { id: "center", href: "/about", title: "Andrew Yeh", text: "About Me + Contact Info", bg: fpvImage },
   { id: "bottom", href: "/software", title: "Software", text: "", bg: codeImage },
 ];
 

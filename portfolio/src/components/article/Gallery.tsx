@@ -1,15 +1,18 @@
+import React from "react";
+import "./Gallery.css"; // import the CSS file
+
 interface GalleryProps {
   images: string[];
 }
 
 export const Gallery = ({ images }: GalleryProps) => (
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+  <div className="gallery">
     {images.map((src, idx) => (
       <img
         key={idx}
         src={src}
         alt={`Gallery item ${idx}`}
-        className="w-full h-full object-cover rounded-lg"
+        className="gallery-item"
       />
     ))}
   </div>

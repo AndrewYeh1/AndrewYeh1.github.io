@@ -1,0 +1,14 @@
+.title {
+  font-size: 1.5rem;       /* similar to Tailwind text-xl */
+  font-weight: 700;         /* font-bold */
+  margin-top: 1.5rem;       /* spacing between sections */
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  color: #fff;              /* adjust if needed */
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2rem;       /* similar to Tailwind md:text-2xl */
+  }
+}

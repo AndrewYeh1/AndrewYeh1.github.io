@@ -1,0 +1,11 @@
+.text {
+  font-size: 1rem;          /* equivalent to Tailwind text-base */
+  line-height: 1.625;       /* roughly matches leading-relaxed */
+  margin-bottom: 1rem;      /* equivalent to mb-4 */
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 1.125rem;    /* equivalent to Tailwind md:text-lg */
+  }
+}

@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import pcbImage from "../assets/pcb.png";
 
 import { ExpandablePanel } from "../components/ExpandablePanel.tsx";
 import { Title } from "../components/article/Title.tsx";
 import { Text } from "../components/article/Text.tsx";
 import { Gallery } from "../components/article/Gallery.tsx";
+
+import pcbImage from "../assets/pcb.png";
 
 import "./Hardware.css";
 

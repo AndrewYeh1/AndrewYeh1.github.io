@@ -1,24 +1,24 @@
 /* Page container */
-.hardware-page {
+.software-page {
   width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
 /* Hero section (full viewport height) */
-.hardware-page .hero {
+.software-page .hero {
   position: relative;
   height: 100vh;
   width: 100%;
 }
 
-.hardware-page .hero-image {
+.software-page .hero-image {
   position: relative;
   height: 76%;
   width: 100%;
 }
 
-.hardware-page .hero-img {
+.software-page .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -64,46 +64,6 @@
   height: 56px; /* w-14 */
 }
 
-/* Return home button */
-.return-home-container {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 2000;
-}
-
-.return-home-button {
-  background-color: #111;
-  color: white;
-  border: none;
-  border-radius: 50%;         /* circular */
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: transform 0.2s, background-color 0.2s;
-}
-
-.return-home-button:hover {
-  background-color: #222;
-  transform: translateY(-2px);
-}
-
-.return-home-button:focus {
-  outline: none;
-}
-
-.return-home-icon {
-  width: 100%;
-  height: 100%;
-}
-
-/* Articles Section */
-.articles {
-  max-width: 1200px;
-  width: 100%;
-  margin: 2.5rem auto 2.5rem auto; /* pt-10 pb-5 */
+.scroll-text {
+  font-size: 24px;
 }

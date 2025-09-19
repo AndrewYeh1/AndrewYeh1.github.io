@@ -1,0 +1,18 @@
+.video-container {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 1024px;   /* limit width like other sections */
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;  /* optional rounded corners */
+  background-color: #000;
+}
+
+.video-title {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
