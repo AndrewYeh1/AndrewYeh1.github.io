@@ -14,8 +14,6 @@ import myMoneyMyFutureImage from "../assets/myMoneyMyFuture.png"
 import exoplanetChartImage from "../assets/exoplanetChart.png"
 import constellationImage from "../assets/constellations.png"
 
-import { TopBar } from "../components/TopBar";
-
 import "./Software.css";
 
 export const SoftwarePage = () => {
