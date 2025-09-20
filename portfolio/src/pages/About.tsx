@@ -6,6 +6,9 @@ import { Text } from "../components/article/Text.tsx";
 import { Gallery } from "../components/article/Gallery.tsx";
 
 import fpvImage from "../assets/fpv.jpg";
+import mcrAeroImage from "../assets/mcrAero.png";
+import advAeroImage from "../assets/advAero.png"
+import aeroBothImage from "../assets/aeroBoth.png"
 
 import { TopBar } from "../components/TopBar";
 
@@ -88,15 +91,45 @@ export const AboutPage = () => {
 
       {/* Expandable Articles Section */}
       <div className="articles">
-        <ExpandablePanel header="Introduction">
+        <ExpandablePanel header="About Me">
+          <Title text="Introduction" />
           <Text>
-            Hi
+            Hello everyone, welcome to the new and improved version of my site, I'm glad you found this little corner of the internet.
+            I am a third year computer engineering student at UBC. A few words to describe me would be dedicated, hands on, and goal oriented.
+            I have experience building and organizing various engineering tasks in and out of academic settings.
+            Please take a look around at my various projects and some past experiences and see if anything interests you.
+            For any inquiries, please do not hesitate to contact me through LinkedIn or Email. Hope you enjoy the site!
           </Text>
         </ExpandablePanel>
 
-        <ExpandablePanel header="AeroDesign">
+        <ExpandablePanel header="Design Team">
+          <Title text="AeroDesign" />
           <Text>
-            My participation and leadership in AeroDesign is a major part of my university career.
+            My participation and leadership in SAE AeroDesign is a major part of my university career. Current I am a lead in the avionics division,
+            working on a variety of both hardware and software equipment. This experience provided me with an immense amount of engineering and soft skills.
+            Allowing me to hone my abilities in tools such as Altium, Python, and SolidWorks while leading a team and participating in shaping the team
+            as a whole. I would like to thank my team members and mentors for such a supportive environment.
+          </Text>
+          <Title text="Competition and Test Flights" />
+          <Text>
+            A few pictures from test flights, just a trip to a nearby airfield to find out how well designed our planes are. Both planes flew well and the team
+            scored a podium finish at the SAE AeroDesign competition.
+          </Text>
+          <Gallery
+            images={[
+              mcrAeroImage,
+              advAeroImage,
+              aeroBothImage
+            ]}
+          />
+        </ExpandablePanel>
+
+        <ExpandablePanel header="Work Experience">
+          <Title text="Swim Instructor" />
+          <Text>
+            Aside from the usual engineering business I also worked as a swimming instructor with the City of Edmonton. Although it was only for a short year
+            before moving away to Vancouver, I learned a lot of interpersonal skills from the job, being the first time I was immersed in a professional work setting.
+            From negotiating with parents to designing a lesson plan, I am grateful for the time I spent working with peers and students.
           </Text>
         </ExpandablePanel>
       </div>
