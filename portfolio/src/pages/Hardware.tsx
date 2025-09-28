@@ -7,8 +7,15 @@ import { Text } from "../components/article/Text.tsx";
 import { Gallery } from "../components/article/Gallery.tsx";
 
 import pcbImage from "../assets/pcb.png";
-import schematicImage from "../assets/schematic.png"
-import schematic2Image from "../assets/schematic2.png"
+import threeDPcb from "../assets/3dPcb.png"
+import sch1 from "../assets/sch1.png"
+import sch2 from "../assets/sch2.png"
+import sch3 from "../assets/sch3.png"
+import sch4 from "../assets/sch4.png"
+import sch5 from "../assets/sch5.png"
+import sch6 from "../assets/sch6.png"
+import sch7 from "../assets/sch7.png"
+import sch8 from "../assets/sch8.png"
 import aerialImage from "../assets/aerial.png"
 import foggyDroneImage from "../assets/foggyDrone.jpg"
 import thrustStandControllerImage from "../assets/thrustStandController.jpg"
@@ -103,9 +110,18 @@ export const HardwarePage = () => {
           <Title text="Introduction" />
           <Text>
             Created specifically for UBC's AeroDesign avionics stack, its packed with advanced features not found in hobby grade buck converters.
-            The most standout of which is the the dual rail design, ensuring clean and uninterrupted 5V power for on board electronics, while providing
-            high current 6V power for optimal servo performance. Aside from providing power, the board is designed to be robust and easily diagnosable,
-            featuring individual e-fuse protection with voltage and current readings for each power rail.
+          </Text>
+          <Text>
+            - 6V servo rail for optimal servo performance
+          </Text>
+          <Text>
+            - 5V avionics rail to provide clean uninterrupted power for onboard avionics
+          </Text>
+          <Text>
+            - E-fuse protection for both servo rails to protect from shorts
+          </Text>
+          <Text>
+            - 4 ADCs to collect detailed current and voltage data for monitoring
           </Text>
           <Title text="Schematic" />
           <Text>
@@ -115,8 +131,14 @@ export const HardwarePage = () => {
           </Text>
           <Gallery
             images={[
-              schematicImage,
-              schematic2Image
+              sch1,
+              sch2,
+              sch3,
+              sch4,
+              sch5,
+              sch6,
+              sch7,
+              sch8
             ]}
           />
           <Title text="Routing" />
@@ -127,7 +149,8 @@ export const HardwarePage = () => {
           </Text>
           <Gallery
             images={[
-              pcbImage
+              pcbImage,
+              threeDPcb
             ]}
           />
         </ExpandablePanel>
