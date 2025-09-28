@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 import { ExpandablePanel } from "../components/ExpandablePanel.tsx";
 import { Title } from "../components/article/Title.tsx";
@@ -18,6 +19,18 @@ export const AboutPage = () => {
   const handleReturnHome = () => {
     window.location.href = "/"; // navigate to home
   };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.scrollTo({
+        top: window.innerHeight - 100,
+        behavior: "smooth",
+      });
+    }, 500); // adjust delay as needed (ms)
+
+    return () => clearTimeout(timeout);
+  }, []);
+
 
   return (
     <div className="about-page">
