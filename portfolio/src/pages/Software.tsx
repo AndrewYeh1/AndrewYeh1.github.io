@@ -15,6 +15,8 @@ import myMoneyMyFutureImage from "../assets/myMoneyMyFuture.png"
 import exoplanetChartImage from "../assets/exoplanetChart.png"
 import constellationImage from "../assets/constellations.png"
 
+import { TopBar } from "../components/TopBar";
+
 import "./Software.css";
 
 export const SoftwarePage = () => {
@@ -25,7 +27,7 @@ export const SoftwarePage = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       window.scrollTo({
-        top: window.innerHeight,
+        top: window.innerHeight - 100,
         behavior: "smooth",
       });
     }, 500); // adjust delay as needed (ms)
@@ -38,6 +40,9 @@ export const SoftwarePage = () => {
       {/* Hero Section */}
       <div className="hero">
         {/* Scroll Prompt Section */}
+        
+        <TopBar />
+
         <div className="scroll-prompt">
           <motion.div
             onClick={() =>

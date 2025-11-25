@@ -3,6 +3,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  background-color: #111;
 }
 
 /* Hero section (full viewport height) */
@@ -73,7 +74,7 @@
 }
 
 .return-home-button {
-  background-color: #111;
+  background-color: #222;
   color: white;
   border: none;
   border-radius: 50%;         /* circular */
@@ -88,7 +89,7 @@
 }
 
 .return-home-button:hover {
-  background-color: #222;
+  background-color: #333;
   transform: translateY(-2px);
 }
 

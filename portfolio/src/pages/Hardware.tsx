@@ -21,6 +21,8 @@ import foggyDroneImage from "../assets/foggyDrone.jpg"
 import thrustStandControllerImage from "../assets/thrustStandController.jpg"
 import thrustStandSchematicImage from "../assets/thrustStandSchematic.png"
 
+import { TopBar } from "../components/TopBar";
+
 import "./Hardware.css";
 
 export const HardwarePage = () => {
@@ -31,7 +33,7 @@ export const HardwarePage = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       window.scrollTo({
-        top: window.innerHeight,
+        top: window.innerHeight - 100,
         behavior: "smooth",
       });
     }, 500); // adjust delay as needed (ms)
@@ -43,6 +45,7 @@ export const HardwarePage = () => {
     <div className="hardware-page">
       {/* Hero Section */}
       <div className="hero">
+        <TopBar />
         <div className="hero-image">
           <img src={pcbImage} alt="Hero" className="hero-img" />
 
