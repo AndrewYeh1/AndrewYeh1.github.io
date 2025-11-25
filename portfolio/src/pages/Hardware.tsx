@@ -14,8 +14,6 @@ import sch3 from "../assets/sch3.png"
 import sch4 from "../assets/sch4.png"
 import sch5 from "../assets/sch5.png"
 import sch6 from "../assets/sch6.png"
-import sch7 from "../assets/sch7.png"
-import sch8 from "../assets/sch8.png"
 import aerialImage from "../assets/aerial.png"
 import foggyDroneImage from "../assets/foggyDrone.jpg"
 import thrustStandControllerImage from "../assets/thrustStandController.jpg"
@@ -121,7 +119,7 @@ export const HardwarePage = () => {
             - 5V avionics rail to provide clean uninterrupted power for onboard avionics
           </Text>
           <Text>
-            - E-fuse protection for both servo rails to protect from shorts
+            - E-fuse protection for every servo to protect system from shorts
           </Text>
           <Text>
             - 4 ADCs to collect detailed current and voltage data for monitoring
@@ -139,9 +137,7 @@ export const HardwarePage = () => {
               sch3,
               sch4,
               sch5,
-              sch6,
-              sch7,
-              sch8
+              sch6
             ]}
           />
           <Title text="Routing" />
