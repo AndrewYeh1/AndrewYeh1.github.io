@@ -149,6 +149,12 @@ export const SoftwarePage = () => {
           />
         </ExpandablePanel>
 
+        <ExpandablePanel header="ROS2 Self Driving Car">
+          <Text>
+            More details coming soon!
+          </Text>
+        </ExpandablePanel>
+
         <ExpandablePanel header="UBC Study Sphere">
           <Title text="From the Lead's Perspective" />
           <Text>
@@ -159,12 +165,6 @@ export const SoftwarePage = () => {
           <Text>
             On the more technical side of things, I wrote the network protocol to facilitate Python server and Java client communications. With the server and clients being in different languages, the primary challenge
             was to develop a robust system capable of withstanding various nuances of each programming language.
-          </Text>
-        </ExpandablePanel>
-
-        <ExpandablePanel header="ROS2 Robotics">
-          <Text>
-            More details coming soon!
           </Text>
         </ExpandablePanel>
       </div>

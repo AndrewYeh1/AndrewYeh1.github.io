@@ -14,6 +14,11 @@ import sch3 from "../assets/sch3.png"
 import sch4 from "../assets/sch4.png"
 import sch5 from "../assets/sch5.png"
 import sch6 from "../assets/sch6.png"
+import sch7 from "../assets/sch7.png"
+import flightController from "../assets/flightController.png"
+import flightController3d from "../assets/flightController3d.png"
+import flexPcb from "../assets/flexPcb.png"
+import flexPcb3d from "../assets/flexPcb3d.png"
 import aerialImage from "../assets/aerial.png"
 import foggyDroneImage from "../assets/foggyDrone.jpg"
 import thrustStandControllerImage from "../assets/thrustStandController.jpg"
@@ -113,10 +118,13 @@ export const HardwarePage = () => {
             Created specifically for UBC's AeroDesign avionics stack, its packed with advanced features not found in hobby grade buck converters.
           </Text>
           <Text>
-            - 6V servo rail for optimal servo performance
+            - 10A @ 6V servo rail for optimal servo performance
           </Text>
           <Text>
-            - 5V avionics rail to provide clean uninterrupted power for onboard avionics
+            - 5A @ 5V avionics rail to provide clean uninterrupted power for onboard avionics
+          </Text>
+          <Text>
+            - 1A @ 3.3V sensors rail to accomodate sensitive sensors
           </Text>
           <Text>
             - E-fuse protection for every servo to protect system from shorts
@@ -137,19 +145,48 @@ export const HardwarePage = () => {
               sch3,
               sch4,
               sch5,
-              sch6
+              sch6,
+              sch7
             ]}
           />
           <Title text="Routing" />
           <Text>
             One of the biggest improvements from AeroDesign's previous attempts at a power board is the significant reduction in size and complexity.
             Through many iterations of component placement and routing, the board was reduced from 6 layers and 6900mm² to
-            4 layers and 4800mm² while gaining some additional features new to the board such as the dual rail power supply.
+            4 layers and 4800mm² while gaining some additional features new to the board such as the triple rail power supply.
           </Text>
           <Gallery
             images={[
               pcbImage,
               threeDPcb
+            ]}
+          />
+        </ExpandablePanel>
+
+        <ExpandablePanel header="Flight Stack">
+          <Title text="Introduction" />
+          <Text>
+            Attached here is the rest of the flight stack developed under my leadership for UBC AeroDesign. Included is a flight controller and a flex pcb distribution board.
+          </Text>
+          <Title text="Flight Controller" />
+          <Text>
+            The flight controller is a custom designed board using the STM32H7 microcontroller, alongside BNO055 9-axis IMU and BMP390 barometer. It supports PWM, I2C, CAN, and UART communication protocols alongside
+            USB and ST-link for flashing and debugging.
+          </Text>
+          <Gallery
+            images={[
+              flightController,
+              flightController3d
+            ]}
+          />
+          <Title text="Flex PCB Distribution Board" />
+          <Text>
+            This board represents a first attempt at a creative use of a FlexPCB to replace all signal and small power wires in the aircraft. It drastically reduces weight from around 100g to just 7g while improving signal shielding.
+          </Text>
+          <Gallery
+            images={[
+              flexPcb,
+              flexPcb3d
             ]}
           />
         </ExpandablePanel>
@@ -188,17 +225,6 @@ export const HardwarePage = () => {
             while bringing various performance uplifts. The most major of the improvements is the high precision 24-bit HX711 load cell amplifier and ADC. For the power power measurements, a modest 10%
             uplift in max current capacity but a 10x improvement in accuracy with the use of a high precision voltage divider and operational amplifiers.
             Additionally, a new torque measurement feature was incorporated into the design, allowing for more detailed analysis on propulsion performance.
-          </Text>
-        </ExpandablePanel>
-
-        <ExpandablePanel header="Flight Controller">
-          <Title text="Introduction" />
-          <Text>
-            Serving as the brain for an autonomous VTOL aircraft, the flight controller and its sensors requires the utmost precision. Equipped with an array of sensors,
-            including IMU, GPS, barometer, and most importantly the STM32H7 chip, this specialized flight controller provides unparalleled precision and processing power.
-          </Text>
-          <Text>
-            More details comming soon!
           </Text>
         </ExpandablePanel>
       </div>
